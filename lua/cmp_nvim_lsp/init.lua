@@ -92,7 +92,7 @@ end
 ---Backwards compatibility
 M.update_capabilities = function(_, override)
   local _deprecate = vim.deprecate or deprecate
-  _deprecate('cmp_nvim_lsp.update_capabilities', 'cmp_nvim_lsp.default_capabilities', '1.0.0', 'cmp-nvim-lsp')
+--  _deprecate('cmp_nvim_lsp.update_capabilities', 'cmp_nvim_lsp.default_capabilities', '1.0.0', 'cmp-nvim-lsp')
   return M.default_capabilities(override)
 end
 
